@@ -2,11 +2,13 @@
 // Programmed by: Nicholas Langley
 
 $(function(){
-    $('#prospect').on('click', function()
+
+    let xhr = new XMLHttpRequest;
+
+    $('a#prospect').on('click', function()
     {
-        $('#content').hide();
-        let xhr = new XMLHttpRequest;
-        xhr.open('GET', 'prospect.html', true);
+        $('div#content').hide();
+        xhr.open("GET", "prospect.html", true);
         xhr.onload = function()
         {
             if(this.status===200) 
@@ -16,12 +18,13 @@ $(function(){
             }
         }
         xhr.send();
+        $('div#content').fadeIn(1000);
     });
-    $('#convert').on('click', function()
+
+    $('a#convert').on('click', function()
     {
-        $('#content').hide();
-        let xhr = new XMLHttpRequest;
-        xhr.open('GET', 'convert.html', true);
+        $('div#content').hide();
+        xhr.open("GET", "convert.html", true);
         xhr.onload = function()
         {
             if(this.status===200)
@@ -31,12 +34,13 @@ $(function(){
             }
         }
         xhr.send();
+        $('div#content').fadeIn(1000);
     });
-    $('#retain').on('click', function()
+
+    $('a#retain').on('click', function()
     {
-        $('#content').hide();
-        let xhr = new XMLHttpRequest;
-        xhr.open('GET', 'retain.html', true);
+        $('div#content').hide();
+        xhr.open('GET', "retain.html", true);
         xhr.onload = function()
         {
             if(this.status===200)
@@ -46,5 +50,6 @@ $(function(){
             }
         }
         xhr.send();
+        $('div#content').fadeIn(1000);
     });
 });
