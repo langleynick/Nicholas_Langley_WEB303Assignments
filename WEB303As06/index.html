@@ -1,16 +1,107 @@
 <html>
 
-<head>
-    <link href="css/style.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Batman Fan Page</title>
-    <meta name="author" content="Nicholas Langley">
-    
-</head>
-
-<body>
-
-    <script type="text/javascript" src="js/script.js"></script>
-</body>
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Batman Fan Page</title>
+        <meta name="author" content="Nicholas Langley">
+        <script type="text/javascript" src="js/jquery.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Batman Fan Page</h1>
+            <h3>WEB 303 Javascript II</h3>
+        </header>
+        <ul class="info-accordion">
+            <button class="accordion-control">Biography</button>
+            <div class="accordion-panel" id="bio">
+                <p>Little is known about the cape vigilante. We can assume he was born in Gotham City.</p>
+            </div>
+            <button class="accordion-control">Secret Identity</button>
+            <div class="accordion-panel" id="identity">
+                <p>Now it wouldn't be so secret if we knew, right??</p>
+            </div>
+            <button class="accordion-control">Powers</button>
+            <div class="accordion-panel" id="bio">
+                <p>Batman has no known powers. He uses his martial arts skills to battle his foes.</p>
+            </div>
+            <button class="accordion-control">Partners</button>
+            <div class="accordion-panel" id="powers">
+                <p>Batman has a few known associates, his sidekick Robin, and Commissioner Gordon.</p>
+            </div>
+            <button class="accordion-control">Enemies</button>
+            <div class="accordion-panel" id="enemies">
+                <p>Batman has gained quite a few enemies: Joker, Penguin, Mr. Freeze, Scarecrow, and the list goes on.</p>
+            </div>
+        </ul>
+        <img id="img-1" src="imgs/batman-image1.png">
+        <div id="movies">
+            <h1>Newest Trilogy of Movies</h1>
+            <div class="panel-group">
+                <ul class="tab-list1">
+                    <li class="active1">
+                        <a class="tab-control1" href="#tab1">Batman Begins</a>
+                    </li>
+                    <li>
+                        <a class="tab-control1" href="#tab2">The Dark Knight</a>
+                    </li>
+                    <li>
+                        <a class="tab-control1" href="#tab3">The Dark Knight Rises</a>
+                    </li>
+                </ul>
+                <div class="tab-panel1 active1" id="tab1">
+                    <h2>Batman Begins</h2>
+                    <p>Batman Begins was the first movie in the recent trilogy of Batman Films. It shows the initial introduction of Batman into Gotham city and he fights Scarecrow to defend the city.</p>
+                </div> 
+                <div class="tab-panel1" id="tab2">
+                    <h2>The Dark Knight</h2>
+                    <p>The Dark Knight is the second movie, and argueably one of the best Batman movies to ever be released. This film focuses on Batman's battle with the Joker.</p>
+                </div> 
+                <div class="tab-panel1" id="tab3">
+                    <h2>The Dark Knight Rises</h2>
+                    <p>The last but certainly not least film is The Dark Knight Rises. Batman faces a deep struggle to find the inner(and outer) strength to fight Bane, his final and certainly strongest enemy to date.</p>
+                </div> 
+            </div>
+        </div>
+        <div id="fav-movies">
+            <h1>My Favourite Movies</h1>
+            <div class="panel-group">
+                <ul class="tab-list2">
+                    <li class="active2">
+                        <a class="tab-control2" href="#tab4">The Batman</a>
+                    </li>
+                    <li>
+                        <a class="tab-control2" href="#tab5">The Dark Knight</a>
+                    </li>
+                    <li>
+                        <a class="tab-control2" href="#tab6">Batman</a>
+                    </li>
+                </ul>
+                <div class="tab-panel2 active2" id="tab4">
+                    <h2>The Batman</h2>
+                    <p>The Batman is the newest and one of the most different takes we have seen of Batman. It is a darker, more serious film and truly follows a different path than its previous installments. Batman takes on many different foes in his earlier years establishing how we came to be.</p>
+                </div> 
+                <div class="tab-panel2" id="tab5">
+                    <h2>The Dark Knight</h2>
+                    <p>As mentioned before, Batman really goes through a test of will and attempts to come out on top. This is what makes me so interested in this movie. Normally Batman always finds a way to come out on top, but this was a new limit he had reached.</p>
+                </div> 
+                <div class="tab-panel2" id="tab6">
+                    <h2>Batman</h2>
+                    <p>This 1989 film did alot for the character of Batman on screen. It is a classic and deserves all of the praise. Jack Nicholson's performance as Joker could have carried the movie on its own.</p>
+                </div> 
+            </div>
+        </div>
+        <footer>
+            <h4>Nicholas Langley<br>0106967</h4>
+            <div>
+                Sources: 
+                <ul>
+                    <li>Info: <a href="https://en.wikipedia.org/wiki/Batman_in_film">Wikipedia: Batman in Film</a></li>
+                    <li>Image: <a href="https://pixabay.com/vectors/batman-hero-thief-comics-super-5982258/">andremsantana @ pixabay</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
 
 </html>

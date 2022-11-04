@@ -1,4 +1,120 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+header {
+    position: relative;
+    top: 0;
+    padding: 10px;
+    background-color: yellow;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#img-1 {
+    width: 35%;
+    float: right;
+}
+.info-accordion {
+    float: left;
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+}
+.accordion-control{
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.accordion-panel {
+    display: none;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+#movies {
+    clear: both;
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+}
+#fav-movies {
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 15px;
+}
+.panel-group {
+    background-color: yellow;
+    font-weight: bold;
+    border: 6px double black;
+}
+.tab-list1 {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.tab-list1 a:link, .tab-list1 a:visited {
+    color: black;
+    text-decoration: none;
+    background-color: lightgray;
+}
+.tab-list1 a:hover, .tab-list1 a:active {
+    background-color: yellow;
+}
+.tab-control1 {
+    padding: 10px;
+    border: 1px solid black;
+}
+.tab-panel1 {
+    background-color: lightgray;
+    display: none;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 15px;
+}
+.active1 {
+    display: block;
+}
+.tab-list2 {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.tab-list2 a:link, .tab-list2 a:visited {
+    color: black;
+    text-decoration: none;
+    background-color: lightgray;
+}
+.tab-list2 a:hover, .tab-list2 a:active {
+    background-color: yellow;
+}
+.tab-control2 {
+    padding: 10px;
+    border: 1px solid black;
+}
+.tab-panel2 {
+    background-color: lightgray;
+    display: none;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 15px;
+}
+.active2 {
+    display: block;
+}
+footer {
+    background-color: yellow;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border: 6px double black;
+    margin-top: 10px;
 }
