@@ -5,6 +5,10 @@
 
 $(function () {
     // your code here
+    let lon1;
+    let lat1;
+    let lon2;
+    let lat2;
     const location = document.getElementById("locationhere");
     try{
         navigator.geolocation.getCurrentPosition(success, fail);
@@ -17,28 +21,30 @@ $(function () {
         let sessionLocation = document.createElement("p");
         sessionLocation.innerHTML = "Longitude: " + lon1 + " Latitude: " + lat1;
         location.before(sessionLocation);
+        if (!localStorage.getItem('lat2')){ 
+            location.append("Welcome!");
+            window.localStorage.setItem('lat2', JSON.stringify(lat1));
+            window.localStorage.setItem('lon2', JSON.stringify(lon1));
+        }
+        if(localStorage.getItem('lat2')){
+            lat2 = JSON.parse(window.localStorage.getItem('lat2'));
+            lon2 = JSON.parse(window.localStorage.getItem('lon2'));
+            let oldLocation = document.createElement("p");
+            oldLocation.innerHTML = "Old Longitude: " + lon2 + " Old Latitude: " + lat2;
+            location.append(oldLocation);
+            let welcomeBack = document.createElement("h1");
+            welcomeBack.innerHTML = "Welcome Back!";
+            location.append(welcomeBack);
+            let meterDistance = calcDistanceBetweenPoints(lat1, lon1, lat2, lon2);
+            let kmDistance = meterDistance / 100;
+            welcomeBack.after(kmDistance + "km");
+        } 
+        window.localStorage.setItem('lat2', JSON.stringify(lat1));
+        window.localStorage.setItem('lon2', JSON.stringify(lon1));
     };
     function fail(){
         alert("You must enable Location Services to continue with this application");
     };
-    if(localStorage.getItem('lat2')){
-        lat2 = JSON.parse(window.localStorage.getItem('lat2'));
-        lon2 = JSON.parse(window.localStorage.getItem('lon2'));
-        let oldLocation = document.createElement("p");
-        oldLocation.innerHTML = "Old Longitude: " + lon2 + " Old Latitude: " + lat2;
-        location.append(oldLocation);
-        let welcomeBack = document.createElement("h1");
-        welcomeBack.innerHTML = "Welcome Back!";
-        location.append(welcomeBack);
-        let meterDistance = calcDistanceBetweenPoints();
-        let kmDistance = meterDistance / 100;
-        welcomeBack.after(kmDistance + "km");
-    } 
-    if (!localStorage.getItem('lat2')){ 
-        location.append("Welcome!");
-    }
-        window.localStorage.setItem('lat2', JSON.stringify(lat1));
-        window.localStorage.setItem('lon2', JSON.stringify(lon1));
     
     // DO NOT EDIT ANY CODE IN THIS FUNCTION DEFINTION
     // function to calculate the distance in metres between two lat/long pairs on Earth
