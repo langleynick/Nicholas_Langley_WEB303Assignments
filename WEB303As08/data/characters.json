@@ -1,0 +1,51 @@
+[
+    {
+        "alias" : "Batman",
+        "firstName" : "Bruce",
+        "lastName" : "Wayne",
+        "actor" : "Christian Bale",
+        "partner" : "Robin"
+    },
+    {
+        "alias" : "Robin",
+        "firstName" : "Robin",
+        "lastName" : "Blake",
+        "actor" : "Joseph Gordan Levitt",
+        "partner" : "Batman"
+    },
+    {
+        "alias" : "Alfred",
+        "firstName" : "Alfred",
+        "lastName" : "Pennyworth",
+        "actor" : "Michael Caine",
+        "partner" : "Batman"
+    },
+    {
+        "alias" : "Catwoman",
+        "firstName" : "Selena",
+        "lastName" : "Kyle",
+        "actor" : "Anne Hathaway",
+        "partner" : "No Partner"
+    },
+    {
+        "alias" : "Joker",
+        "firstName" : "Unknown",
+        "lastName" : "Unknown",
+        "actor" : "Heath Ledger",
+        "partner" : "No Partner"
+    },
+    {
+        "alias" : "Two-Face",
+        "firstName" : "Harvey",
+        "lastName" : "Dent",
+        "actor" : "Aaron Eckhart",
+        "partner" : "No Partner"
+    },
+    {
+        "alias" : "Scarecrow",
+        "firstName" : "Unknown",
+        "lastName" : "Unknown",
+        "actor" : "Cillian Murphy",
+        "partner" : "No Partners"
+    }
+]
