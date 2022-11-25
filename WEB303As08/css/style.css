@@ -6,3 +6,9 @@ th {
     background-color: black;
     color: white;
 }
+.ascending::after {
+    content: " \02191";
+}
+.descending::after {
+    content: " \02193";
+}
