@@ -4,48 +4,48 @@
         "firstName" : "Bruce",
         "lastName" : "Wayne",
         "actor" : "Christian Bale",
-        "partner" : "Robin"
+        "dateFirstAppeared" : "1939-05-01"
     },
     {
         "alias" : "Robin",
         "firstName" : "Robin",
         "lastName" : "Blake",
         "actor" : "Joseph Gordan Levitt",
-        "partner" : "Batman"
+        "dateFirstAppeared" : "1940-03-06"
     },
     {
         "alias" : "Alfred",
         "firstName" : "Alfred",
         "lastName" : "Pennyworth",
         "actor" : "Michael Caine",
-        "partner" : "Batman"
+        "dateFirstAppeared" : "1943-04-01"
     },
     {
         "alias" : "Catwoman",
         "firstName" : "Selena",
         "lastName" : "Kyle",
         "actor" : "Anne Hathaway",
-        "partner" : "No Partner"
+        "dateFirstAppeared" : "1940-04-25"
     },
     {
         "alias" : "Joker",
         "firstName" : "Unknown",
         "lastName" : "Unknown",
         "actor" : "Heath Ledger",
-        "partner" : "No Partner"
+        "dateFirstAppeared" : "1940-04-25"
     },
     {
         "alias" : "Two-Face",
         "firstName" : "Harvey",
         "lastName" : "Dent",
         "actor" : "Aaron Eckhart",
-        "partner" : "No Partner"
+        "dateFirstAppeared" : "1942-08-01"
     },
     {
         "alias" : "Scarecrow",
         "firstName" : "Unknown",
         "lastName" : "Unknown",
         "actor" : "Cillian Murphy",
-        "partner" : "No Partners"
+        "dateFirstAppeared" : "1941-09-01"
     }
 ]
