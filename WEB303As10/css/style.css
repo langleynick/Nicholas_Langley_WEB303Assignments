@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+form{
+    line-height: 2rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    width: 75%;
+}
