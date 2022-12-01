@@ -11,3 +11,12 @@ form{
     font-weight: bold;
     width: 75%;
 }
+.disabled{
+    background-color: lightcoral;
+}
+.fail{
+    background-color: lightcoral;
+}
+.pass{
+    background-color: lightgreen;
+}
